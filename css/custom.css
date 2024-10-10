@@ -1,0 +1,89 @@
+html,body{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+  
+::-webkit-scrollbar-thumb {
+  height: 5px;
+  background: linear-gradient(10deg, #b092eb 0%, #d2f8c0 100%);
+}
+
+.joia-bg-gradient {
+    background: #b092eb;
+    background: linear-gradient(90deg, #b092eb 0%, #b092eb 50%, #d2f8c0 70%, #d2f8c0 100%);
+    animation: gradient 5s ease infinite;
+    
+    @media screen and (max-width: 767px) {
+      background: linear-gradient(90deg, #b092eb 0%, #d2f8c0 100%);
+    }
+}
+
+.joia-bg-learn4elixir {
+    background: #4D0AA7;
+}
+
+.joia-learn4elixir-logo {
+    width: 15rem;
+}
+
+.joia-text-gradient {
+    color: #b092eb;
+    background: -webkit-linear-gradient(10deg, #b092eb 0%, #d2f8c0 100%);
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.joia-text-green {
+  color:#d2f8c0;
+}
+
+.joia-text-purple {
+  color:#b092eb;
+}
+
+.joia-bg-green {
+    background: #d2f8c0;
+}
+
+.joia-bg-green:hover {
+  background: #83a573;
+}
+
+.joia-bg-purple {
+    background: #b092eb;
+}
+
+.joia-bg-purple:hover {
+    background: #896bc4;
+}
+
+.joia-footer-img {
+  width: 200px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
